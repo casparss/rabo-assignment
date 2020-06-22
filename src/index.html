@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/rabbo-assessment.esm.js"></script>
+  <script nomodule src="/build/rabbo-assessment.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #444;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h2 {
+      border-bottom: 1px dashed #f1eded;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+    button {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Rabo development assessment<br /> Caspar S-S :)</h2>
+
+    <h4>Disabled state</h4>
+    <currency-input disabled name="one"></currency-input>
+
+    <h4>Required attribute</h4>
+    <currency-input required name="two"></currency-input>
+
+    <h4>Numbers only validation</h4>
+    <currency-input value="ff,ff" required name="two"></currency-input>
+
+    <h4>Read only field</h4>
+    <currency-input value="200,43" readonly name="two"></currency-input>
+
+    <h4>Placeholder</h4>
+    <currency-input placeholder="300,20" name="three"></currency-input>
+
+    <h4>Vanilla, only name set</h4>
+    <currency-input name="three"></currency-input>
+
+    <h4>Custom separator</h4>
+    <currency-input separator="+" name="four"></currency-input>
+
+    <h4>Custom symbol</h4>
+    <currency-input symbol="$" name="four"></currency-input>
+
+    <button>Submit</button>
+  </form>
+</body>
+</html>

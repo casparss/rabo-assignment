@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  --main-border-color: rgba(0, 0, 0, 0.23);
+  --main-error-color: #ff7d7d;
+  --main-focus-color: orange;
+  --main-disabled-color: rgba(0, 0, 0, 0.3);
+}
+
+:host .Input {
+  display: flex;
+}
+
+:host .Input--disabled {
+  opacity: 0.5;
+}
+
+:host .Input-field {
+  border: 0;
+  margin: 0;
+  display: block;
+  padding: 8px;
+  box-sizing: content-box;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--main-border-color);
+  margin-bottom: 5px;
+}
+
+:host .Input-validationMessage {
+  color: var(--main-error-color);
+  margin: 0 12px 5px;
+}
+
+:host .Input-field:focus {
+  border: 1px solid var(--main-focus-color);
+}
+
+:host .Input--invalid .Input-field {
+  border: 1px solid var(--main-error-color);
+}
+
+:host .Input--disabled .Input-field {
+  background: var(--main-disabled-color);
+}
+
+:host .Input-separator {
+  align-self: flex-end;
+  margin: 0 5px;
+}
+
+:host .Input-currencySymbol {
+  align-self: center;
+  margin-right: 5px;
+}
