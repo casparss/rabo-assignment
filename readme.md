@@ -9,7 +9,7 @@ Hello Rabo :) Here's my assessment submission with a few thoughts.
 
 It was fun developing with Stencil (this is the first time actually using it). A lot of it was super easy to use but I still made mistakes and figuring some things took time, so i wasn't as fast as i would've liked. The test isn't perfect - with more time I could deliver more (spent probably 1 day on it), but i think i've covered the most important aspects.
 
-## Have I had more time:
+## If I had more time:
 - Would've implemented standard events API for an input element: change, input, keyup, keydown etc.
 - Supported more standard input attributes, where possible
 - Thought about accessibility. I hardly focused on this
