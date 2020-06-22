@@ -100,12 +100,12 @@ export class CurrencyInput implements ComponentInterface {
     return classArray.join(' ');
   }
 
-  get placecholderValue(): string[] {
+  get placeholderValue(): string[] {
     return this.placeholder.split(',');
   }
 
   render() {
-    const [placeholder1, placeholder2] = this.placecholderValue;
+    const [placeholder1, placeholder2] = this.placeholderValue;
     this.renderExposedInput();
 
     return (
