@@ -105,9 +105,8 @@ export class CurrencyInput implements ComponentInterface {
   }
 
   render() {
-    this.renderExposedInput();
     const [placeholder1, placeholder2] = this.placecholderValue;
-
+    this.renderExposedInput();
 
     return (
       <div class={this.cssStates}>
@@ -168,24 +167,3 @@ export class CurrencyInput implements ComponentInterface {
     }
   }
 }
-
-/*
-@TODOs:
-- onChange event
-- aria states for accessbiliity
-- states:
-    - validation state, form submittable based on state
-    - disabled
-- styling with states
-- aria?
-- tests
-
-*/
-
-/*
-Props:attributes of input:
-aria-labelledby, disabled, accept, autoCapitalize, autoComplete, autoCorrect, autoFocus, inputMode, min, max, minLength, maxLength, multiple, name, pattern, placeholder, readOnly, required, spellCheck, step, size, type, value
-
-input events:
-onInput, onBlur, onFocus, onKeyDown
-*/
